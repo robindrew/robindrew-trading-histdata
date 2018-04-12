@@ -12,7 +12,7 @@ import com.robindrew.common.text.tokenizer.CharTokenizer;
 import com.robindrew.trading.histdata.HistDataInstrument;
 import com.robindrew.trading.price.PriceException;
 import com.robindrew.trading.price.candle.IPriceCandle;
-import com.robindrew.trading.price.candle.PriceCandle;
+import com.robindrew.trading.price.candle.MidPriceCandle;
 import com.robindrew.trading.price.decimal.Decimals;
 
 public class HistDataM1LineParser extends HistDataLineParser {
@@ -48,7 +48,7 @@ public class HistDataM1LineParser extends HistDataLineParser {
 			int low = Decimals.toBigInt(tokenizer.next(false), decimalPlaces);
 			int close = Decimals.toBigInt(tokenizer.next(false), decimalPlaces);
 
-			return new PriceCandle(open, high, low, close, toMillis(openDate), toMillis(closeDate), decimalPlaces);
+			return new MidPriceCandle(open, high, low, close, toMillis(openDate), toMillis(closeDate), decimalPlaces);
 		} catch (Exception e) {
 			throw new PriceException("Failed to parse candle from line: '" + line + "'", e);
 		}

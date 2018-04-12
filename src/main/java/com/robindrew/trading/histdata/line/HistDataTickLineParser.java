@@ -11,8 +11,8 @@ import java.time.format.DateTimeFormatter;
 import com.robindrew.common.text.tokenizer.CharTokenizer;
 import com.robindrew.trading.histdata.HistDataInstrument;
 import com.robindrew.trading.price.candle.IPriceCandle;
+import com.robindrew.trading.price.candle.TickPriceCandle;
 import com.robindrew.trading.price.decimal.Decimals;
-import com.robindrew.trading.price.tick.PriceTick;
 
 public class HistDataTickLineParser extends HistDataLineParser {
 
@@ -44,8 +44,8 @@ public class HistDataTickLineParser extends HistDataLineParser {
 
 		int bidPrice = Decimals.toBigInt(bid, decimalPlaces);
 		int askPrice = Decimals.toBigInt(ask, decimalPlaces);
-		
-		return new PriceTick(bidPrice, askPrice, timestamp, decimalPlaces);
+
+		return new TickPriceCandle(bidPrice, askPrice, timestamp, decimalPlaces);
 	}
 
 }
