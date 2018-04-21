@@ -14,8 +14,6 @@ public class HistDataPcfLineConverter extends PcfFileLineConverter {
 		IPriceCandleLineParser parser = new HistDataM1LineParser(instrument);
 		ILineFilter filter = new HistDataLineFilter();
 		HistDataPcfLineConverter converter = new HistDataPcfLineConverter(manager, parser, filter);
-		converter.setMinPrice(instrument.getPricePrecision().getMinPrice());
-		converter.setMaxPrice(instrument.getPricePrecision().getMaxPrice());
 		return converter;
 	}
 

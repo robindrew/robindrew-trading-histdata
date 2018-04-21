@@ -75,139 +75,139 @@ import com.robindrew.trading.price.precision.PricePrecision;
 public class HistDataInstrument extends Instrument {
 
 	/** AUD/CAD. */
-	public static final HistDataInstrument AUDCAD = new HistDataInstrument("AUDCAD", AUD_CAD, 6, 40000, 190000);
+	public static final HistDataInstrument AUDCAD = new HistDataInstrument("AUDCAD", AUD_CAD, 6);
 	/** AUD/CHF. */
-	public static final HistDataInstrument AUDCHF = new HistDataInstrument("AUDCHF", AUD_CHF, 6, 40000, 190000);
+	public static final HistDataInstrument AUDCHF = new HistDataInstrument("AUDCHF", AUD_CHF, 6);
 	/** AUD/JPY. */
-	public static final HistDataInstrument AUDJPY = new HistDataInstrument("AUDJPY", AUD_JPY, 6, 40000, 190000);
+	public static final HistDataInstrument AUDJPY = new HistDataInstrument("AUDJPY", AUD_JPY, 6);
 	/** AUD/NZD. */
-	public static final HistDataInstrument AUDNZD = new HistDataInstrument("AUDNZD", AUD_NZD, 6, 40000, 190000);
+	public static final HistDataInstrument AUDNZD = new HistDataInstrument("AUDNZD", AUD_NZD, 6);
 	/** AUD/USD. */
-	public static final HistDataInstrument AUDUSD = new HistDataInstrument("AUDUSD", AUD_USD, 6, 40000, 190000);
+	public static final HistDataInstrument AUDUSD = new HistDataInstrument("AUDUSD", AUD_USD, 6);
 	/** CAD/CHF. */
-	public static final HistDataInstrument CADCHF = new HistDataInstrument("CADCHF", CAD_CHF, 6, 40000, 190000);
+	public static final HistDataInstrument CADCHF = new HistDataInstrument("CADCHF", CAD_CHF, 6);
 	/** CAD/JPY. */
-	public static final HistDataInstrument CADJPY = new HistDataInstrument("CADJPY", CAD_JPY, 6, 40000, 190000);
+	public static final HistDataInstrument CADJPY = new HistDataInstrument("CADJPY", CAD_JPY, 6);
 	/** CHF/JPY. */
-	public static final HistDataInstrument CHFJPY = new HistDataInstrument("CHFJPY", CHF_JPY, 6, 40000, 190000);
+	public static final HistDataInstrument CHFJPY = new HistDataInstrument("CHFJPY", CHF_JPY, 6);
 	/** EUR/AUD. */
-	public static final HistDataInstrument EURAUD = new HistDataInstrument("EURAUD", EUR_AUD, 6, 40000, 190000);
+	public static final HistDataInstrument EURAUD = new HistDataInstrument("EURAUD", EUR_AUD, 6);
 	/** EUR/CAD. */
-	public static final HistDataInstrument EURCAD = new HistDataInstrument("EURCAD", EUR_CAD, 6, 40000, 190000);
+	public static final HistDataInstrument EURCAD = new HistDataInstrument("EURCAD", EUR_CAD, 6);
 	/** EUR/CHF. */
-	public static final HistDataInstrument EURCHF = new HistDataInstrument("EURCHF", EUR_CHF, 6, 40000, 190000);
+	public static final HistDataInstrument EURCHF = new HistDataInstrument("EURCHF", EUR_CHF, 6);
 	/** EUR/CZK. */
-	public static final HistDataInstrument EURCZK = new HistDataInstrument("EURCZK", EUR_CZK, 6, 40000, 190000);
+	public static final HistDataInstrument EURCZK = new HistDataInstrument("EURCZK", EUR_CZK, 6);
 	/** EUR/DKK. */
-	public static final HistDataInstrument EURDKK = new HistDataInstrument("EURDKK", EUR_DKK, 6, 40000, 190000);
+	public static final HistDataInstrument EURDKK = new HistDataInstrument("EURDKK", EUR_DKK, 6);
 	/** EUR/GBP. */
-	public static final HistDataInstrument EURGBP = new HistDataInstrument("EURGBP", EUR_GBP, 6, 40000, 190000);
+	public static final HistDataInstrument EURGBP = new HistDataInstrument("EURGBP", EUR_GBP, 6);
 	/** EUR/HUF. */
-	public static final HistDataInstrument EURHUF = new HistDataInstrument("EURHUF", EUR_HUF, 6, 40000, 190000);
+	public static final HistDataInstrument EURHUF = new HistDataInstrument("EURHUF", EUR_HUF, 6);
 	/** EUR/JPY. */
-	public static final HistDataInstrument EURJPY = new HistDataInstrument("EURJPY", EUR_JPY, 6, 40000, 190000);
+	public static final HistDataInstrument EURJPY = new HistDataInstrument("EURJPY", EUR_JPY, 6);
 	/** EUR/NOK. */
-	public static final HistDataInstrument EURNOK = new HistDataInstrument("EURNOK", EUR_NOK, 6, 40000, 190000);
+	public static final HistDataInstrument EURNOK = new HistDataInstrument("EURNOK", EUR_NOK, 6);
 	/** EUR/NZD. */
-	public static final HistDataInstrument EURNZD = new HistDataInstrument("EURNZD", EUR_NZD, 6, 40000, 190000);
+	public static final HistDataInstrument EURNZD = new HistDataInstrument("EURNZD", EUR_NZD, 6);
 	/** EUR/PLN. */
-	public static final HistDataInstrument EURPLN = new HistDataInstrument("EURPLN", EUR_PLN, 6, 40000, 190000);
+	public static final HistDataInstrument EURPLN = new HistDataInstrument("EURPLN", EUR_PLN, 6);
 	/** EUR/SEK. */
-	public static final HistDataInstrument EURSEK = new HistDataInstrument("EURSEK", EUR_SEK, 6, 40000, 190000);
+	public static final HistDataInstrument EURSEK = new HistDataInstrument("EURSEK", EUR_SEK, 6);
 	/** EUR/TRY. */
-	public static final HistDataInstrument EURTRY = new HistDataInstrument("EURTRY", EUR_TRY, 6, 40000, 190000);
+	public static final HistDataInstrument EURTRY = new HistDataInstrument("EURTRY", EUR_TRY, 6);
 	/** EUR/USD. */
-	public static final HistDataInstrument EURUSD = new HistDataInstrument("EURUSD", EUR_USD, 6, 40000, 190000);
+	public static final HistDataInstrument EURUSD = new HistDataInstrument("EURUSD", EUR_USD, 6);
 	/** GBP/AUD. */
-	public static final HistDataInstrument GBPAUD = new HistDataInstrument("GBPAUD", GBP_AUD, 6, 40000, 190000);
+	public static final HistDataInstrument GBPAUD = new HistDataInstrument("GBPAUD", GBP_AUD, 6);
 	/** GBP/CAD. */
-	public static final HistDataInstrument GBPCAD = new HistDataInstrument("GBPCAD", GBP_CAD, 6, 40000, 190000);
+	public static final HistDataInstrument GBPCAD = new HistDataInstrument("GBPCAD", GBP_CAD, 6);
 	/** GBP/CHF. */
-	public static final HistDataInstrument GBPCHF = new HistDataInstrument("GBPCHF", GBP_CHF, 6, 40000, 190000);
+	public static final HistDataInstrument GBPCHF = new HistDataInstrument("GBPCHF", GBP_CHF, 6);
 	/** GBP/JPY. */
-	public static final HistDataInstrument GBPJPY = new HistDataInstrument("GBPJPY", GBP_JPY, 6, 40000, 190000);
+	public static final HistDataInstrument GBPJPY = new HistDataInstrument("GBPJPY", GBP_JPY, 6);
 	/** GBP/NZD. */
-	public static final HistDataInstrument GBPNZD = new HistDataInstrument("GBPNZD", GBP_NZD, 6, 40000, 190000);
+	public static final HistDataInstrument GBPNZD = new HistDataInstrument("GBPNZD", GBP_NZD, 6);
 	/** GBP/USD. */
-	public static final HistDataInstrument GBPUSD = new HistDataInstrument("GBPUSD", GBP_USD, 6, 40000, 190000);
+	public static final HistDataInstrument GBPUSD = new HistDataInstrument("GBPUSD", GBP_USD, 6);
 	/** NZD/CAD. */
-	public static final HistDataInstrument NZDCAD = new HistDataInstrument("NZDCAD", NZD_CAD, 6, 40000, 190000);
+	public static final HistDataInstrument NZDCAD = new HistDataInstrument("NZDCAD", NZD_CAD, 6);
 	/** NZD/CHF. */
-	public static final HistDataInstrument NZDCHF = new HistDataInstrument("NZDCHF", NZD_CHF, 6, 40000, 190000);
+	public static final HistDataInstrument NZDCHF = new HistDataInstrument("NZDCHF", NZD_CHF, 6);
 	/** NZD/JPY. */
-	public static final HistDataInstrument NZDJPY = new HistDataInstrument("NZDJPY", NZD_JPY, 6, 40000, 190000);
+	public static final HistDataInstrument NZDJPY = new HistDataInstrument("NZDJPY", NZD_JPY, 6);
 	/** NZD/USD. */
-	public static final HistDataInstrument NZDUSD = new HistDataInstrument("NZDUSD", NZD_USD, 6, 40000, 190000);
+	public static final HistDataInstrument NZDUSD = new HistDataInstrument("NZDUSD", NZD_USD, 6);
 	/** SGD/JPY. */
-	public static final HistDataInstrument SGDJPY = new HistDataInstrument("SGDJPY", SGD_JPY, 6, 40000, 190000);
+	public static final HistDataInstrument SGDJPY = new HistDataInstrument("SGDJPY", SGD_JPY, 6);
 	/** USD/CAD. */
-	public static final HistDataInstrument USDCAD = new HistDataInstrument("USDCAD", USD_CAD, 6, 40000, 190000);
+	public static final HistDataInstrument USDCAD = new HistDataInstrument("USDCAD", USD_CAD, 6);
 	/** USD/CHF. */
-	public static final HistDataInstrument USDCHF = new HistDataInstrument("USDCHF", USD_CHF, 6, 40000, 190000);
+	public static final HistDataInstrument USDCHF = new HistDataInstrument("USDCHF", USD_CHF, 6);
 	/** USD/CZK. */
-	public static final HistDataInstrument USDCZK = new HistDataInstrument("USDCZK", USD_CZK, 6, 40000, 190000);
+	public static final HistDataInstrument USDCZK = new HistDataInstrument("USDCZK", USD_CZK, 6);
 	/** USD/DKK. */
-	public static final HistDataInstrument USDDKK = new HistDataInstrument("USDDKK", USD_DKK, 6, 40000, 190000);
+	public static final HistDataInstrument USDDKK = new HistDataInstrument("USDDKK", USD_DKK, 6);
 	/** USD/HKD. */
-	public static final HistDataInstrument USDHKD = new HistDataInstrument("USDHKD", USD_HKD, 6, 40000, 190000);
+	public static final HistDataInstrument USDHKD = new HistDataInstrument("USDHKD", USD_HKD, 6);
 	/** USD/HUF. */
-	public static final HistDataInstrument USDHUF = new HistDataInstrument("USDHUF", USD_HUF, 6, 40000, 190000);
+	public static final HistDataInstrument USDHUF = new HistDataInstrument("USDHUF", USD_HUF, 6);
 	/** USD/JPY. */
-	public static final HistDataInstrument USDJPY = new HistDataInstrument("USDJPY", USD_JPY, 6, 40000, 190000);
+	public static final HistDataInstrument USDJPY = new HistDataInstrument("USDJPY", USD_JPY, 6);
 	/** USD/MXN. */
-	public static final HistDataInstrument USDMXN = new HistDataInstrument("USDMXN", USD_MXN, 6, 40000, 190000);
+	public static final HistDataInstrument USDMXN = new HistDataInstrument("USDMXN", USD_MXN, 6);
 	/** USD/NOK. */
-	public static final HistDataInstrument USDNOK = new HistDataInstrument("USDNOK", USD_NOK, 6, 40000, 190000);
+	public static final HistDataInstrument USDNOK = new HistDataInstrument("USDNOK", USD_NOK, 6);
 	/** USD/PLN. */
-	public static final HistDataInstrument USDPLN = new HistDataInstrument("USDPLN", USD_PLN, 6, 40000, 190000);
+	public static final HistDataInstrument USDPLN = new HistDataInstrument("USDPLN", USD_PLN, 6);
 	/** USD/SEK. */
-	public static final HistDataInstrument USDSEK = new HistDataInstrument("USDSEK", USD_SEK, 6, 40000, 190000);
+	public static final HistDataInstrument USDSEK = new HistDataInstrument("USDSEK", USD_SEK, 6);
 	/** USD/SGD. */
-	public static final HistDataInstrument USDSGD = new HistDataInstrument("USDSGD", USD_SGD, 6, 40000, 190000);
+	public static final HistDataInstrument USDSGD = new HistDataInstrument("USDSGD", USD_SGD, 6);
 	/** USD/TRY. */
-	public static final HistDataInstrument USDTRY = new HistDataInstrument("USDTRY", USD_TRY, 6, 40000, 190000);
+	public static final HistDataInstrument USDTRY = new HistDataInstrument("USDTRY", USD_TRY, 6);
 	/** USD/ZAR. */
-	public static final HistDataInstrument USDZAR = new HistDataInstrument("USDZAR", USD_ZAR, 6, 40000, 190000);
+	public static final HistDataInstrument USDZAR = new HistDataInstrument("USDZAR", USD_ZAR, 6);
 	/** XAG/USD. */
-	public static final HistDataInstrument XAGUSD = new HistDataInstrument("XAGUSD", XAG_USD, 6, 40000, 190000);
+	public static final HistDataInstrument XAGUSD = new HistDataInstrument("XAGUSD", XAG_USD, 6);
 	/** XAU/AUD. */
-	public static final HistDataInstrument XAUAUD = new HistDataInstrument("XAUAUD", XAU_AUD, 6, 40000, 190000);
+	public static final HistDataInstrument XAUAUD = new HistDataInstrument("XAUAUD", XAU_AUD, 6);
 	/** XAU/CHF. */
-	public static final HistDataInstrument XAUCHF = new HistDataInstrument("XAUCHF", XAU_CHF, 6, 40000, 190000);
+	public static final HistDataInstrument XAUCHF = new HistDataInstrument("XAUCHF", XAU_CHF, 6);
 	/** XAU/EUR. */
-	public static final HistDataInstrument XAUEUR = new HistDataInstrument("XAUEUR", XAU_EUR, 6, 40000, 190000);
+	public static final HistDataInstrument XAUEUR = new HistDataInstrument("XAUEUR", XAU_EUR, 6);
 	/** XAU/GBP. */
-	public static final HistDataInstrument XAUGBP = new HistDataInstrument("XAUGBP", XAU_GBP, 6, 40000, 190000);
+	public static final HistDataInstrument XAUGBP = new HistDataInstrument("XAUGBP", XAU_GBP, 6);
 	/** XAU/USD. */
-	public static final HistDataInstrument XAUUSD = new HistDataInstrument("XAUUSD", XAU_USD, 6, 40000, 190000);
+	public static final HistDataInstrument XAUUSD = new HistDataInstrument("XAUUSD", XAU_USD, 6);
 	/** ZAR/JPY. */
-	public static final HistDataInstrument ZARJPY = new HistDataInstrument("ZARJPY", ZAR_JPY, 6, 40000, 190000);
+	public static final HistDataInstrument ZARJPY = new HistDataInstrument("ZARJPY", ZAR_JPY, 6);
 
 	/** UKX/GBP. */
-	public static final HistDataInstrument UKXGBP = new HistDataInstrument("UKXGBP", FTSE_100, 6, 40000, 190000);
+	public static final HistDataInstrument UKXGBP = new HistDataInstrument("UKXGBP", FTSE_100, 6);
 	/** SPX/USD. */
-	public static final HistDataInstrument SPXUSD = new HistDataInstrument("SPXUSD", SP_500, 6, 40000, 190000);
+	public static final HistDataInstrument SPXUSD = new HistDataInstrument("SPXUSD", SP_500, 6);
 	/** GRX/EUR. */
-	public static final HistDataInstrument GRXEUR = new HistDataInstrument("GRXEUR", DAX, 6, 40000, 190000);
+	public static final HistDataInstrument GRXEUR = new HistDataInstrument("GRXEUR", DAX, 6);
 	/** HKX/HKD. */
-	public static final HistDataInstrument HKXHKD = new HistDataInstrument("HKXHKD", HANG_SENG, 6, 40000, 190000);
+	public static final HistDataInstrument HKXHKD = new HistDataInstrument("HKXHKD", HANG_SENG, 6);
 	/** AUX/AUD. */
-	public static final HistDataInstrument AUXAUD = new HistDataInstrument("AUXAUD", ASX_200, 6, 40000, 190000);
+	public static final HistDataInstrument AUXAUD = new HistDataInstrument("AUXAUD", ASX_200, 6);
 	/** ETX/EUR. */
-	public static final HistDataInstrument ETXEUR = new HistDataInstrument("ETXEUR", EURO_STOXX_50, 6, 40000, 190000);
+	public static final HistDataInstrument ETXEUR = new HistDataInstrument("ETXEUR", EURO_STOXX_50, 6);
 	/** JPX/JPY. */
-	public static final HistDataInstrument JPXJPY = new HistDataInstrument("JPXJPY", NIKKEI_225, 6, 40000, 190000);
+	public static final HistDataInstrument JPXJPY = new HistDataInstrument("JPXJPY", NIKKEI_225, 6);
 	/** NSX/USD. */
-	public static final HistDataInstrument NSXUSD = new HistDataInstrument("NSXUSD", NASDAQ_100, 6, 40000, 190000);
+	public static final HistDataInstrument NSXUSD = new HistDataInstrument("NSXUSD", NASDAQ_100, 6);
 	/** UDX/USD. */
-	public static final HistDataInstrument UDXUSD = new HistDataInstrument("UDXUSD", US_DOLLAR_INDEX, 6, 40000, 190000);
+	public static final HistDataInstrument UDXUSD = new HistDataInstrument("UDXUSD", US_DOLLAR_INDEX, 6);
 	/** FRX/EUR. */
-	public static final HistDataInstrument FRXEUR = new HistDataInstrument("FRXEUR", CAC_40, 6, 40000, 190000);
+	public static final HistDataInstrument FRXEUR = new HistDataInstrument("FRXEUR", CAC_40, 6);
 
 	/** BCO/USD. */
-	public static final HistDataInstrument BCOUSD = new HistDataInstrument("BCOUSD", BRENT_CRUDE_OIL, 6, 40000, 190000);
+	public static final HistDataInstrument BCOUSD = new HistDataInstrument("BCOUSD", BRENT_CRUDE_OIL, 6);
 	/** WTI/USD. */
-	public static final HistDataInstrument WTIUSD = new HistDataInstrument("WTIUSD", US_CRUDE_OIL, 6, 40000, 190000);
+	public static final HistDataInstrument WTIUSD = new HistDataInstrument("WTIUSD", US_CRUDE_OIL, 6);
 
 	public static HistDataInstrument valueOf(String name) {
 		switch (name) {
@@ -350,9 +350,9 @@ public class HistDataInstrument extends Instrument {
 
 	private final IPricePrecision precision;
 
-	public HistDataInstrument(String name, IInstrument underlying, int decimalPlaces, int minPrice, int maxPrice) {
+	public HistDataInstrument(String name, IInstrument underlying, int decimalPlaces) {
 		super(name, underlying);
-		this.precision = new PricePrecision(decimalPlaces, minPrice, maxPrice);
+		this.precision = new PricePrecision(decimalPlaces);
 	}
 
 	public IPricePrecision getPricePrecision() {
