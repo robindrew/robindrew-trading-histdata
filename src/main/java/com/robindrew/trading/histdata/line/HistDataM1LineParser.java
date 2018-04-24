@@ -48,7 +48,9 @@ public class HistDataM1LineParser extends HistDataLineParser {
 			int low = Decimals.toBigInt(tokenizer.next(false), decimalPlaces);
 			int close = Decimals.toBigInt(tokenizer.next(false), decimalPlaces);
 
-			return new MidPriceCandle(open, high, low, close, toMillis(openDate), toMillis(closeDate), decimalPlaces);
+			long tickVolume = Long.parseLong(tokenizer.next(false));
+
+			return new MidPriceCandle(open, high, low, close, toMillis(openDate), toMillis(closeDate), decimalPlaces, tickVolume);
 		} catch (Exception e) {
 			throw new PriceException("Failed to parse candle from line: '" + line + "'", e);
 		}
