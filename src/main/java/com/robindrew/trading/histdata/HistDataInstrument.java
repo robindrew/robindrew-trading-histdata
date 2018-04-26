@@ -11,7 +11,7 @@ import static com.robindrew.trading.Instruments.CAC_40;
 import static com.robindrew.trading.Instruments.CAD_CHF;
 import static com.robindrew.trading.Instruments.CAD_JPY;
 import static com.robindrew.trading.Instruments.CHF_JPY;
-import static com.robindrew.trading.Instruments.DAX;
+import static com.robindrew.trading.Instruments.DAX_30;
 import static com.robindrew.trading.Instruments.EURO_STOXX_50;
 import static com.robindrew.trading.Instruments.EUR_AUD;
 import static com.robindrew.trading.Instruments.EUR_CAD;
@@ -34,7 +34,7 @@ import static com.robindrew.trading.Instruments.GBP_CHF;
 import static com.robindrew.trading.Instruments.GBP_JPY;
 import static com.robindrew.trading.Instruments.GBP_NZD;
 import static com.robindrew.trading.Instruments.GBP_USD;
-import static com.robindrew.trading.Instruments.HANG_SENG;
+import static com.robindrew.trading.Instruments.HANG_SENG_33;
 import static com.robindrew.trading.Instruments.NASDAQ_100;
 import static com.robindrew.trading.Instruments.NIKKEI_225;
 import static com.robindrew.trading.Instruments.NZD_CAD;
@@ -188,9 +188,9 @@ public class HistDataInstrument extends Instrument {
 	/** SPX/USD. */
 	public static final HistDataInstrument SPXUSD = new HistDataInstrument("SPXUSD", SP_500, 6);
 	/** GRX/EUR. */
-	public static final HistDataInstrument GRXEUR = new HistDataInstrument("GRXEUR", DAX, 6);
+	public static final HistDataInstrument GRXEUR = new HistDataInstrument("GRXEUR", DAX_30, 6);
 	/** HKX/HKD. */
-	public static final HistDataInstrument HKXHKD = new HistDataInstrument("HKXHKD", HANG_SENG, 6);
+	public static final HistDataInstrument HKXHKD = new HistDataInstrument("HKXHKD", HANG_SENG_33, 6);
 	/** AUX/AUD. */
 	public static final HistDataInstrument AUXAUD = new HistDataInstrument("AUXAUD", ASX_200, 6);
 	/** ETX/EUR. */
