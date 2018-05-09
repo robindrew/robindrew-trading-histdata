@@ -184,30 +184,30 @@ public class HistDataInstrument extends Instrument {
 	public static final HistDataInstrument ZARJPY = new HistDataInstrument("ZARJPY", ZAR_JPY, 6);
 
 	/** UKX/GBP. */
-	public static final HistDataInstrument UKXGBP = new HistDataInstrument("UKXGBP", FTSE_100, 6);
+	public static final HistDataInstrument UKXGBP = new HistDataInstrument("UKXGBP", FTSE_100, 2);
 	/** SPX/USD. */
-	public static final HistDataInstrument SPXUSD = new HistDataInstrument("SPXUSD", SP_500, 6);
+	public static final HistDataInstrument SPXUSD = new HistDataInstrument("SPXUSD", SP_500, 2);
 	/** GRX/EUR. */
-	public static final HistDataInstrument GRXEUR = new HistDataInstrument("GRXEUR", DAX_30, 6);
+	public static final HistDataInstrument GRXEUR = new HistDataInstrument("GRXEUR", DAX_30, 2);
 	/** HKX/HKD. */
-	public static final HistDataInstrument HKXHKD = new HistDataInstrument("HKXHKD", HANG_SENG_33, 6);
+	public static final HistDataInstrument HKXHKD = new HistDataInstrument("HKXHKD", HANG_SENG_33, 2);
 	/** AUX/AUD. */
-	public static final HistDataInstrument AUXAUD = new HistDataInstrument("AUXAUD", ASX_200, 6);
+	public static final HistDataInstrument AUXAUD = new HistDataInstrument("AUXAUD", ASX_200, 2);
 	/** ETX/EUR. */
-	public static final HistDataInstrument ETXEUR = new HistDataInstrument("ETXEUR", EURO_STOXX_50, 6);
+	public static final HistDataInstrument ETXEUR = new HistDataInstrument("ETXEUR", EURO_STOXX_50, 2);
 	/** JPX/JPY. */
-	public static final HistDataInstrument JPXJPY = new HistDataInstrument("JPXJPY", NIKKEI_225, 6);
+	public static final HistDataInstrument JPXJPY = new HistDataInstrument("JPXJPY", NIKKEI_225, 2);
 	/** NSX/USD. */
-	public static final HistDataInstrument NSXUSD = new HistDataInstrument("NSXUSD", NASDAQ_100, 6);
+	public static final HistDataInstrument NSXUSD = new HistDataInstrument("NSXUSD", NASDAQ_100, 2);
 	/** UDX/USD. */
-	public static final HistDataInstrument UDXUSD = new HistDataInstrument("UDXUSD", US_DOLLAR_INDEX, 6);
+	public static final HistDataInstrument UDXUSD = new HistDataInstrument("UDXUSD", US_DOLLAR_INDEX, 2);
 	/** FRX/EUR. */
-	public static final HistDataInstrument FRXEUR = new HistDataInstrument("FRXEUR", CAC_40, 6);
+	public static final HistDataInstrument FRXEUR = new HistDataInstrument("FRXEUR", CAC_40, 2);
 
 	/** BCO/USD. */
-	public static final HistDataInstrument BCOUSD = new HistDataInstrument("BCOUSD", BRENT_CRUDE_OIL, 6);
+	public static final HistDataInstrument BCOUSD = new HistDataInstrument("BCOUSD", BRENT_CRUDE_OIL, 2);
 	/** WTI/USD. */
-	public static final HistDataInstrument WTIUSD = new HistDataInstrument("WTIUSD", US_CRUDE_OIL, 6);
+	public static final HistDataInstrument WTIUSD = new HistDataInstrument("WTIUSD", US_CRUDE_OIL, 2);
 
 	public static HistDataInstrument valueOf(String name) {
 		switch (name) {
