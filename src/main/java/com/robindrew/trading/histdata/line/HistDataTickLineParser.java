@@ -8,6 +8,9 @@ import java.time.LocalDateTime;
 import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import com.robindrew.common.text.tokenizer.CharTokenizer;
 import com.robindrew.trading.histdata.HistDataInstrument;
 import com.robindrew.trading.price.candle.IPriceCandle;
@@ -15,6 +18,8 @@ import com.robindrew.trading.price.candle.TickPriceCandle;
 import com.robindrew.trading.price.decimal.Decimals;
 
 public class HistDataTickLineParser extends HistDataLineParser {
+
+	private static final Logger log = LoggerFactory.getLogger(HistDataTickLineParser.class);
 
 	private static DateTimeFormatter DATE_FORMAT = ofPattern("yyyyMMdd");
 	private static DateTimeFormatter TIME_FORMAT = ofPattern("HHmmssSSS");
@@ -41,6 +46,14 @@ public class HistDataTickLineParser extends HistDataLineParser {
 		// Prices
 		BigDecimal bid = new BigDecimal(tokenizer.next(false));
 		BigDecimal ask = new BigDecimal(tokenizer.next(false));
+		if (bid.doubleValue() <= 0.0) {
+			log.warn("Invalid price candle: '" + line + "'");
+			return null;
+		}
+		if (ask.doubleValue() <= 0.0) {
+			log.warn("Invalid price candle: '" + line + "'");
+			return null;
+		}
 
 		int bidPrice = Decimals.toBigInt(bid, decimalPlaces);
 		int askPrice = Decimals.toBigInt(ask, decimalPlaces);
