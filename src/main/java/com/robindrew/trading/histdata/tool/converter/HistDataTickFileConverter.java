@@ -1,6 +1,6 @@
 package com.robindrew.trading.histdata.tool.converter;
 
-import static com.robindrew.trading.provider.TradeDataProvider.HISTDATA;
+import static com.robindrew.trading.provider.TradingProvider.HISTDATA;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -61,7 +61,7 @@ public class HistDataTickFileConverter {
 		log.info("Converting Instrument: {}", instrument);
 
 		// Output directory
-		File directory = PtfFileManager.getDirectory(HISTDATA, instrument, outputDir);
+		File directory = PtfFileManager.getDirectory(outputDir, HISTDATA, instrument);
 		if (directory.exists()) {
 			log.info("Output directory already exists, skipping: {}", directory);
 			return;

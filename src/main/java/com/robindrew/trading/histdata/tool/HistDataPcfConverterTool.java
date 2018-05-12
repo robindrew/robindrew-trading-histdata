@@ -1,7 +1,7 @@
 package com.robindrew.trading.histdata.tool;
 
 import static com.robindrew.trading.histdata.line.HistDataFormat.TICK;
-import static com.robindrew.trading.provider.TradeDataProvider.HISTDATA;
+import static com.robindrew.trading.provider.TradingProvider.HISTDATA;
 import static java.util.concurrent.TimeUnit.HOURS;
 
 import java.io.File;
@@ -18,11 +18,11 @@ import com.robindrew.trading.histdata.line.HistDataFormat;
 import com.robindrew.trading.histdata.line.HistDataLineFilter;
 import com.robindrew.trading.histdata.line.HistDataM1LineParser;
 import com.robindrew.trading.histdata.line.HistDataTickLineParser;
-import com.robindrew.trading.price.candle.format.pcf.source.IPcfSourceManager;
-import com.robindrew.trading.price.candle.format.pcf.source.file.PcfFileManager;
+import com.robindrew.trading.price.candle.format.pcf.source.IPcfSourceProviderManager;
+import com.robindrew.trading.price.candle.format.pcf.source.file.PcfFileProviderManager;
 import com.robindrew.trading.price.candle.line.filter.ILineFilter;
 import com.robindrew.trading.price.candle.line.parser.IPriceCandleLineParser;
-import com.robindrew.trading.provider.TradeDataProvider;
+import com.robindrew.trading.provider.TradingProvider;
 
 public class HistDataPcfConverterTool implements Runnable {
 
@@ -32,19 +32,19 @@ public class HistDataPcfConverterTool implements Runnable {
 		File inputDir = args.getDirectory("-i", true);
 		File outputDir = args.getDirectory("-o", true);
 		HistDataFormat format = args.getEnum("-f", HistDataFormat.class, TICK);
-		TradeDataProvider provider = args.getEnum("-p", TradeDataProvider.class, HISTDATA);
+		TradingProvider provider = args.getEnum("-p", TradingProvider.class, HISTDATA);
 
-		IPcfSourceManager manager = new PcfFileManager(outputDir, provider);
+		IPcfSourceProviderManager manager = new PcfFileProviderManager(outputDir, provider);
 
 		new HistDataPcfConverterTool(inputDir, manager, format).run();;
 	}
 
 	private final File inputDir;
-	private final IPcfSourceManager manager;
+	private final IPcfSourceProviderManager manager;
 	private final HistDataFormat format;
 	private final ExecutorService executor = Executors.newFixedThreadPool(5);
 
-	public HistDataPcfConverterTool(File inputDir, IPcfSourceManager manager, HistDataFormat format) {
+	public HistDataPcfConverterTool(File inputDir, IPcfSourceProviderManager manager, HistDataFormat format) {
 		this.inputDir = Check.existsDirectory("inputDir", inputDir);
 		this.manager = Check.notNull("manager", manager);
 		this.format = Check.notNull("format", format);
