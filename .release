@@ -1,0 +1,11 @@
+<release>
+   <groupId>com.robindrew</groupId>
+   <artifactId>robindrew-trading-histdata</artifactId>
+   <version>3.0</version>
+   <releaseVersions>
+      <releaseVersion>
+         <hash>c9898d253ba9735ad84efb57885868c0</hash>
+         <version>3.0.1</version>
+      </releaseVersion>
+   </releaseVersions>
+</release>
