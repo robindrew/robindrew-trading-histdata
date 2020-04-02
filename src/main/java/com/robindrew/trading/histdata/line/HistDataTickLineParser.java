@@ -14,7 +14,7 @@ import org.slf4j.LoggerFactory;
 import com.robindrew.common.text.tokenizer.CharTokenizer;
 import com.robindrew.trading.histdata.HistDataInstrument;
 import com.robindrew.trading.price.candle.IPriceCandle;
-import com.robindrew.trading.price.candle.TickPriceCandle;
+import com.robindrew.trading.price.candle.tick.TickPriceCandle;
 import com.robindrew.trading.price.decimal.Decimals;
 
 public class HistDataTickLineParser extends HistDataLineParser {
